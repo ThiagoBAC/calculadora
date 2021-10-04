@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora On-line</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="fundo">
+
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado">
+                
+            </p>
+
+            <table>
+                <tr>
+                    <td><button onclick="clean()" class="botao">c</button></td>
+                    <td><button onclick="back()" class="botao"><</button></td>
+                    <td><button onclick="adicionarOperador('/')" class="botao">/</button></td>
+                    <td><button onclick="adicionarOperador('*')" class="botao">x</button></td>
+                </tr>           
+           
+                <tr>
+                    <td><button onclick="adicionarOperador(7)" class="botao">7</button></td>
+                    <td><button onclick="adicionarOperador(8)" class="botao">8</button></td>
+                    <td><button onclick="adicionarOperador(9)" class="botao">9</button></td>
+                    <td><button onclick="adicionarOperador('-')" class="botao">-</button></td>
+                </tr>            
+            
+                <tr>
+                    <td><button onclick="adicionarOperador(4)" class="botao">4</button></td>
+                    <td><button onclick="adicionarOperador(5)"  class="botao">5</button></td>
+                    <td><button onclick="adicionarOperador(6)" class="botao">6</button></td>
+                    <td><button onclick="adicionarOperador('+')" class="botao">+</button></td>
+                </tr>            
+            
+                <tr>
+                    <td><button onclick="adicionarOperador(1)" class="botao">1</button></td>
+                    <td><button onclick="adicionarOperador(2)" class="botao">2</button></td>
+                    <td><button onclick="adicionarOperador(3)" class="botao">3</button></td>
+                    <td rowspan="2"><button onclick="calcular()" class="botao" style="height: 106px">=</button></td>
+                </tr>
+                       
+                <tr>
+                    <td colspan="2"><button onclick="adicionarOperador(0)" class="botao" style="width: 106px">0</button></td>
+                    <td><button onclick="adicionarOperador('.')"class="botao">.</button></td>
+
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
